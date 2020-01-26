@@ -30,7 +30,7 @@
  */
 defined('MOODLE_INTERNAL') || die();
 
-// State of block at end of week 2.
-$plugin->version   = 2020012503; // Minimal block with admin settings.
+// State of block after Week 3 require capability.
+$plugin->version   = 2020012506;
 $plugin->requires  = 2017111300; // Minimum Moodle 3.4.
 $plugin->component = 'block_superframe';
