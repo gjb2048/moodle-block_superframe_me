@@ -34,6 +34,8 @@
 $string['pluginname'] = 'Super frame';
 $string['welcomeuser'] = 'Welcome {$a->firstname} {$a->lastname}';
 $string['viewlink'] = 'See view page';
+$string['poptext'] = 'See block data';
+$string['tabletext'] = 'Go to table manager';
 
 // Admin settings file.
 $string['headerconfig'] = 'Super frame settings';
