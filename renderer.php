@@ -90,7 +90,7 @@ class block_superframe_renderer extends plugin_renderer_base {
         echo $this->output->header();
         // Call our template to render the data.
         echo $this->render_from_template(
-                'block_superframe/block_table', $table);
+                'block_superframe/block_data', $table);
         // Finish the page.
         echo $this->output->footer();
     }

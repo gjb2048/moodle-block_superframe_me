@@ -60,3 +60,10 @@ $string['medium'] = 'Medium';
 $string['large'] = 'Large';
 
 $string['message'] = 'I am a great developer';
+
+// Block data strings (headers)
+$string['tablecaption'] = 'List of blocks by course';
+$string['blockid'] = 'id';
+$string['blockname'] = 'Block';
+$string['course'] = 'Course';
+$string['catname'] = 'Category';
