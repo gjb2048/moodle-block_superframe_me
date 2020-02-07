@@ -85,6 +85,7 @@ class block_superframe extends block_base {
 
             $renderer = $this->page->get_renderer('block_superframe');
             $this->content->text = $renderer->fetch_block_content($blockid);
+            // Add pop code here...
         }
 
         return $this->content;
