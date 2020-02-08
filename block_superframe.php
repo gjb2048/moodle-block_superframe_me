@@ -79,12 +79,13 @@ class block_superframe extends block_base {
 
         // Add the block id to the Moodle URL for the view page.
         $blockid = $this->instance->id;
+        $courseid = $this->page->course->id;
         $context = context_block::instance($blockid);
 
         if (has_capability('block/superframe:seeviewpage', $context)) {
 
             $renderer = $this->page->get_renderer('block_superframe');
-            $this->content->text = $renderer->fetch_block_content($blockid);
+            $this->content->text = $renderer->fetch_block_content($blockid, $courseid);
             // Add pop code here...
         }
 

@@ -62,6 +62,7 @@ $string['medium'] = 'Medium';
 $string['large'] = 'Large';
 
 $string['message'] = 'I am a great developer';
+$string['returncourse'] = 'Return to course';
 
 // Block data strings (headers)
 $string['tablecaption'] = 'List of blocks by course';
