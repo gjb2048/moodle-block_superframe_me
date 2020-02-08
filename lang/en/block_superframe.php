@@ -70,3 +70,10 @@ $string['blockid'] = 'id';
 $string['blockname'] = 'Block';
 $string['course'] = 'Course';
 $string['catname'] = 'Category';
+
+// Custom sizes.
+$string['size'] = 'Select a size for your iframe';
+$string['custom'] = 'custom';
+$string['small'] = 'small';
+$string['medium'] = 'medium';
+$string['large'] = 'large';

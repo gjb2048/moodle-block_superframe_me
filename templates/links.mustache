@@ -16,7 +16,7 @@
 }}
 
 {{!
-    @template block_superframe/frame
+    @template block_superframe/links
 
     This template renders a url in an iframe of given size.
 
@@ -29,8 +29,11 @@
     }
 }}
 <div  class="container">
-    <h3>{{welcome}}</h3>
-    <a href="{{{url}}}">{{text}}</a><br />
-    <a href={{{popurl}}} target="_blank"> {{poptext}}</a><br />
-    <a href={{{tableurl}}} target="_blank"> {{tabletext}}</a><br />
-</div>
+      <ul class="list-inline">
+        {{#linkdata}}
+          <li class="list-inline-item">
+             <a href="{{{link}}}">{{text}}</a>
+          </li>
+        {{/linkdata}}
+      </ul>
+  </div>
