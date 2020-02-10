@@ -64,7 +64,7 @@ $string['large'] = 'Large';
 $string['message'] = 'I am a great developer';
 $string['returncourse'] = 'Return to course';
 
-// Block data strings (headers)
+// Block data strings (headers).
 $string['tablecaption'] = 'List of blocks by course';
 $string['blockid'] = 'id';
 $string['blockname'] = 'Block';
@@ -77,3 +77,6 @@ $string['custom'] = 'custom';
 $string['small'] = 'small';
 $string['medium'] = 'medium';
 $string['large'] = 'large';
+
+// Navigation link text.
+$string['userlink'] = 'Installed blocks';
