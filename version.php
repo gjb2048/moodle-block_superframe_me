@@ -31,6 +31,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 // State of block after Week 6 add nav icon.
-$plugin->version   = 2020020807;
+$plugin->version   = 2020021301;
 $plugin->requires  = 2017111300; // Minimum Moodle 3.4.
 $plugin->component = 'block_superframe';
