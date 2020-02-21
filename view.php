@@ -21,6 +21,7 @@
  * Modified for use in MoodleBites for Developers Level 1 by Richard Jones & Justin Hunt
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+
 require('../../config.php');
 $blockid = required_param('blockid', PARAM_INT);
 $def_config = get_config('block_superframe');
@@ -32,7 +33,7 @@ $PAGE->set_title(get_string('pluginname', 'block_superframe'));
 $PAGE->navbar->add(get_string('pluginname', 'block_superframe'));
 
 require_login();
-$context = context_block::instance($blockid);
+$context = context_system::instance();
 require_capability('block/superframe:seeviewpage', $context);
 
 // Get the instance configuration data from the database.

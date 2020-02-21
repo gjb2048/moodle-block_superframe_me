@@ -61,7 +61,7 @@ class block_superframe extends block_base {
      * Add some text content to our block.
      */
     function get_content() {
-        global $USER, $CFG;
+        global $USER, $CFG, $OUTPUT;
 
         // Do we have any content?
         if ($this->content !== null) {
@@ -83,13 +83,15 @@ class block_superframe extends block_base {
         $blockid = $this->instance->id;
         $context = context_block::instance($blockid);
 
-        if (has_capability('block/superframe:seeviewpage', $context)) {
-
-            $url = new moodle_url('/blocks/superframe/view.php',
-                    ['blockid' => $blockid]);
-            $this->content->text .= '<p>' . html_writer::link($url,
-                    get_string('viewlink', 'block_superframe')) . '</p>';
+        if (has_capability('block/superframe:seeuserpicture', $context)) {
+            $this->content->text .= '<p>' .
+                    $OUTPUT->user_picture($USER, array('class' => 'userpicture')) .
+                    '</p>';
         }
+        $url = new moodle_url('/blocks/superframe/view.php',
+                ['blockid' => $blockid]);
+        $this->content->text .= '<p>' . html_writer::link($url,
+                get_string('viewlink', 'block_superframe')) . '</p>';
 
         return $this->content;
     }
