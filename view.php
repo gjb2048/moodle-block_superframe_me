@@ -23,6 +23,21 @@
  */
 
 require('../../config.php');
+
+class debugging {
+    public static function logit($message, $value) {
+
+        $file = fopen('mylog.log', 'a');
+
+        if ($file) {
+            fwrite($file, print_r($message, true));
+            fwrite($file, print_r($value, true));
+            fwrite($file, "\n");
+            fclose($file);
+        }
+    }
+}
+
 $blockid = required_param('blockid', PARAM_INT);
 $def_config = get_config('block_superframe');
 $PAGE->set_course($COURSE);
@@ -49,7 +64,7 @@ if ($configdata) {
    $config = $def_config;
    $config->size = 'custom';
 }
-
+debugging::logit("Config: ", $config);
 // URL - comes either from instance or admin.
 $url = $config->url;
 // Let's set up the iframe attributes.
