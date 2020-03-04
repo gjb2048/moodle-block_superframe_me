@@ -36,6 +36,7 @@ $string['welcomeuser'] = 'Welcome {$a->firstname} {$a->lastname}';
 $string['viewlink'] = 'See view page';
 $string['poptext'] = 'See block data';
 $string['tabletext'] = 'Go to table manager';
+$string['norecordsfound'] = 'No records found';
 
 // Admin settings file.
 $string['headerconfig'] = 'Super frame settings';
