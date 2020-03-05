@@ -31,6 +31,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 // State of block after Week 5 add table manager.
-$plugin->version   = 2020012508;
+$plugin->version   = 2020030601;
 $plugin->requires  = 2017111300; // Minimum Moodle 3.4.
 $plugin->component = 'block_superframe';
